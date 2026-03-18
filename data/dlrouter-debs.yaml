@@ -7,7 +7,7 @@ dl_map: /scripts/redirect-config/all-images.json
 certDataPath: /scripts/redirect-config/certdata.txt
 
 # Reload authorization key
-reloadKey: d56dc9f7fe33519af270d98b17792f68
+reloadKey: d79a123338b59518c62f5588ddd2c164
 
 # LRU Cache Size (in items)
 cacheSize: 2048
@@ -84,6 +84,12 @@ servers:
           - UA
     latitude: 59.9417
     longitude: 30.3096
+    weight: 10
+
+  # Europe/London - 1000 Mbit/s
+  - server: mirror.vinehost.net/armbian/apt/
+    latitude: 54.1448
+    longitude: -0.1555
     weight: 10
 
   # Europe/Kiev - 1000 Mbit/s
